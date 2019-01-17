@@ -13,6 +13,6 @@ func main() {
 		spew.Dump(r)
 		fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
 	})
-
+	var abyr ServerType
 	http.ListenAndServe(":1488", nil)
 }
